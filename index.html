@@ -5,5 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#box-model">Box Model</a></li>
+          <li><a href="#flex">Flexbox</a></li>
+          <li><a href="#positioning">Positioning Elements</a></li>
+          <li><a href="#heading">Heading Usage</a></li>
+          <li><a href="#javascript">Simple JavaScript</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="css-section" id="box-model">
+        <div class="css-section__content">
+          <div class="css-section__content-wrapper">
+            <h1>CSS Box Model</h1>
+            <div>
+              <p>/* padding is inside of the element in css */</p>
+              <strong>padding: 40px</strong>
+              <p>/* margin is outside of the element in css */</p>
+              <strong> margin: 40px; outside </strong>
+              <p>/* border is added to width and height element in css */</p>
+              <strong> border: 10px solid green; </strong>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flex-section" id="flex">
+        <div class="flex-section__content">
+          <div class="flex-section__top">
+            <h1>Display: Flex</h1>
+          </div>
+          <div class="flex-section__bottom">
+            <div class="flex-section__bottom-left">
+              <div class="bottom-left__content">
+                <div class="rect"></div>
+                <div class="rect"></div>
+                <div class="rect"></div>
+              </div>
+            </div>
+            <div class="flex-section__bottom-right">
+              <div class="bottom-right__content">
+                <div class="rect"></div>
+                <div class="rect"></div>
+                <div class="rect"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="position-section" id="positioning">
+        <div class="position-section__content">
+          <h1>Positioning Elements</h1>
+          <div class="square"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="square"></div>
+        </div>
+      </section>
+      <section class="heading-section" id="heading">
+        <div class="heading-section__content">
+          <h1>Proper Heading Usage (h1)</h1>
+          <h2>A heading describes the content below it (h2)</h2>
+          <h3>Style of the text is not relevant (h3)</h3>
+          <p>
+            Here is a paragraph about why text-size does not affect the order of
+            the headings. We want to consider the hierarchy of the information
+            and not the styling for determing which tag we choose. (p)
+          </p>
+          <h4>This could be another heading about text size (h4)</h4>
+          <p>
+            And you could put another paragraph (or two, or three...) under this
+            further desribing this concept .(p)
+          </p>
+        </div>
+      </section>
+      <section class="javascript-section" id="javascript">
+        <div class="javascript-section__content">
+          <h1>Simple Javascript</h1>
+          <div class="counter-wrapper">
+            <span class="counter" id="counter">0</span
+            ><button id="counter-btn">Click to increase</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-section">
+      <p>Taisei Kurachi - Semester, Year</p>
+    </footer>
+  </body>
 </html>
